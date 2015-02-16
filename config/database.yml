@@ -25,18 +25,18 @@ development:
   database: db/schedulr_development
   host: localhost
   username: tigranas
-  password: Virl645830
+  password: 
 
 test:
   <<: *default
   database: db/schedulr_test
   host: localhost
   username: tigranas
-  password: Virl645830
+  password: 
 
 production:
   <<: *default
   database: db/schedulr_production
   host: localhost
   username: tigranas
-  password: Virl645830
+  password: 
