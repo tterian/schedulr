@@ -1,0 +1,43 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+//    font-size: ($base-font-size / 16px) * 1em; // [1]
+//    line-height: $base-line-height / $base-font-size; // [1]
+    min-height: 100%; // [2]
+    -webkit-text-size-adjust: 100%; // [3]
+        -ms-text-size-adjust: 100%; // [3]
+    -moz-osx-font-smoothing: grayscale; // [4]
+     -webkit-font-smoothing: antialiased; // [4]
+
+
+      -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* {
+
+    &,
+    &:before,
+    &:after {
+        -webkit-box-sizing: inherit;
+           -moz-box-sizing: inherit;
+                box-sizing: inherit;
+        }
+}
+
+body
+{
+    min-height: 100%;
+}
+
+.off-canvas-wrap, .inner-wrap {
+    min-height: 100%;
+}
+
+.off-canvas-wrap{  
+    height: 100%;
+    overflow-y: auto;
+}

@@ -1,0 +1,88 @@
+<nav class="tab-bar">
+	<section class="left">
+		<a href="#/">
+			<img class="schedulr-icon" src="/assets/schedulr.png"></img>
+		</a>
+	</section>
+
+	<section class="middle tab-bar-section">
+		<div class="small-6 columns small-push-3 search-bar">
+			<input ng-model="query" type="text" placeholder="Search a user..." class="radius">
+		</div>
+	</section>
+
+	<section class="right-small">
+		<div class="right-bar">
+		</div>
+	</section>
+</nav>
+
+<div class="main-content">
+	<div class="small-2 columns filter-tab">
+		<div class="panel radius">
+			<label>Sort users by:</label>
+			<select ng-model="usersProp">
+				<option value="name">Alphabetical</option>
+				<option value="-created_at">Newer to older</option>
+				<option value="created_at">Older to newer</option>
+			</select>
+			<hr>
+		</div>
+	</div>
+
+	<div class="small-6 columns main-tab">
+		<div ng-show="users.$resolved && users.length == 0">
+			<h4>There are no users here...</h4>
+			<p>Please add a user from the right panel!</p>
+		</div>
+	
+		<div class="user-list" ng-repeat="user in users | filter:query
+														| orderBy:usersProp" data-equalizer>
+			<a href="#/user/{{user.id}}">
+				<div class="small-3 columns panel radius" data-equalizer-watch>
+
+					<div ng-show="user.priority == 1">
+						<i class="fi-crown"></i>	
+					</div>
+					<div ng-show="user.sex == 'Male'">
+						<i class="fi-torso"></i>
+					</div>
+					<div ng-show="user.sex == 'Female'">
+						<i class="fi-torso-female"></i>
+					</div>
+					<hr>
+					<div class="user-title">
+						<span>{{user.name}}</span>
+					</div>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="small-3 columns small-pull-1 add-tab">
+		<div class="panel radius">
+			<form ng-submit="save()">
+				<input type="text" placeholder="Enter a user name" class="radius" ng-model="user.name"/>
+				
+				<div class="small-6 columns add-sex">
+					<label for="user-sex-select">Select sex</label>
+					<select id="user-sex-select" ng-init="user.sex='Male'" ng-model="user.sex">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+					</select>
+				</div>
+
+				<div class="small-6 columns add-priority">
+					<label for="user-sex-select">Select priority</label>
+					<select ng-init="user.priority=0" ng-model="user.priority">
+						<option value="1">High</option>
+						<option value="0" selected>Standard</option>
+					</select>
+				</div>
+
+				<input class="button radius" type="submit" value="Add a user"/>
+			</form>	
+		</div>
+	</div>
+
+</div>

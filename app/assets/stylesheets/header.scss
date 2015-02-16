@@ -1,0 +1,29 @@
+$silver-light	: #bdc3c7;
+$mehmeh			: #6a6c6f;
+
+.tab-bar {
+	border-bottom: solid 1px $silver-light;
+}
+
+.tab-bar-section {
+	display: inline-block;
+	width: 50%;
+
+	.search-bar {
+		padding-top: 12px;
+		padding-left: 0;
+		width: 100%;
+	}
+}
+
+.schedulr-icon {
+	padding-left: 40px;
+	padding-bottom: 0;
+	width: 75%;
+	margin: 0;
+}
+
+
+
+
+

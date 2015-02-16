@@ -1,0 +1,18 @@
+{
+  "lib": {
+    "name": "bower-rails generated lib assets",
+    "dependencies": {
+      "angular": "latest",
+      "angular-mocks": "latest",
+      "angular-route": "latest",
+      "angular-animate": "latest",
+      "angular-resource": "latest",
+      "icono": "latest"
+    }
+  },
+  "vendor": {
+    "name": "bower-rails generated vendor assets",
+    "dependencies": {
+    }
+  }
+}

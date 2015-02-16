@@ -1,0 +1,23 @@
+// Place all the styles related to the Orders controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$cinnabar		: #E25041;
+
+.profile-tab {
+	position: relative;
+	padding: 0px;
+
+}
+
+.profile-orders, .profile-priority {
+	text-align: center;
+}
+
+.order-delete {
+	position: absolute;
+	.fi-trash {
+		color: $cinnabar;
+		font-size: 30px;
+	}
+}

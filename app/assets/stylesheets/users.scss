@@ -1,0 +1,73 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$silver-light	: #bdc3c7;
+$mehmeh			: #6a6c6f;
+$white			: #FFFFFF;
+$cinnabar		: #E25041;
+
+.panel {
+	position: relative;
+	background-color: $white;
+	font-color: $mehmeh;
+	margin-right: 40px;
+	margin-bottom: 40px;
+
+}
+
+.user-title {
+	text-align: center;
+	font-color: $mehmeh;
+}
+
+
+.main-content {
+	padding-top: 20px;
+}
+
+.main-tab {
+	float: left;
+	padding-left: 0;
+}
+
+.add-tab {
+	h2 {
+		font-size: 32px;
+		font-color: $mehmeh;
+
+	}
+}
+
+.add-sex {
+	padding-left: 0;
+	float: left;
+}
+
+.add-priority {
+	padding-right: 0;
+	float: right;
+}
+
+.fi-torso, .fi-torso-female {
+	font-size: 60px;
+	padding-left: 40%;
+	color: $cinnabar;
+}
+.fi-crown {
+	position: absolute;
+	padding-left: 47%;
+	color: $cinnabar;
+}
+
+
+.button {
+	margin: 0;
+	padding: 5%;
+	width: 100%;
+}
+
+.filter-tab {
+	padding: 0;
+	margin: 0;
+}
