@@ -26,7 +26,7 @@
 			<div ng-show="user.sex == 'Female'">
 				<i class="fi-torso-female"></i>
 			</div>
-			<div class="user-title">
+			<div class="profile-title">
 				<span>{{user.name}}</span>
 			</div>
 			<hr>
@@ -36,13 +36,12 @@
 
 			<hr>
 			<div class="profile-priority">
-				<span ng-show="user.priority == 0">Regular priority account</span>
-				<span ng-show="user.priority == 1">High priority account</span>
+				<img ng-show="user.priority == 1" src="/assets/ribbon-text.png"></img>
 			</div>
 		</div>
 	</div>
 
-	<div class="small-6 columns main-tab">
+	<div class="small-6 columns orders-tab">
 		<div ng-show="orders.$resolved && orders.length == 0">
 			<h4>There are no orders here...</h4>
 			<p>Please add an order from the right panel!</p>

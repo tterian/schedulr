@@ -2,17 +2,45 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$silver-light	: #bdc3c7;
+$mehmeh			: #6a6c6f;
+$white			: #FFFFFF;
 $cinnabar		: #E25041;
+$fern			: #61BD6D;
+$chateau-green	: #41A85F;
 
 .profile-tab {
 	position: relative;
 	padding: 0px;
-
+	.panel {
+		text-align: center;
+		background-color: $white;
+		font-color: $mehmeh;
+		width: 90%;
+		.profile-priority {
+			background-color: $fern;
+		}
+		.profile-title {
+			text-align: center;
+		}
+		.fi-torso, .fi-torso-female {
+			font-size: 60px;
+			color: $cinnabar;
+		}
+	}
 }
 
-.profile-orders, .profile-priority {
-	text-align: center;
+.orders-tab {
+		float: left;
+		padding-left: 0;
+		margin: 0 20px 20px 20px;
+		
+	.panel {
+		background-color: $white;
+		width: 95%;
+	}
 }
+
 
 .order-delete {
 	position: absolute;

@@ -7,67 +7,67 @@ $mehmeh			: #6a6c6f;
 $white			: #FFFFFF;
 $cinnabar		: #E25041;
 
-.panel {
-	position: relative;
-	background-color: $white;
-	font-color: $mehmeh;
-	margin-right: 40px;
-	margin-bottom: 40px;
-
-}
-
-.user-title {
-	text-align: center;
-	font-color: $mehmeh;
-}
-
 
 .main-content {
 	padding-top: 20px;
-}
+	.filter-tab { 
+		padding: 0;
+		margin: 0;
+		.panel {
+			position: relative;
+			background-color: $white;
+			font-color: $mehmeh;
+			width: 90%;
+		}
+	}
 
-.main-tab {
-	float: left;
-	padding-left: 0;
-}
+	.main-tab {
+		float: left;
+		padding-left: 0;
+		.user-list { 
+			.panel {
+				position: relative;
+				background-color: $white;
+				font-color: $mehmeh;
+				margin: 0 20px 20px 20px;
+				.user-title {
+					text-align: center;
+				}
+				.user-pic {
+					margin-top: 22px;
+					.fi-torso, .fi-torso-female {
+						font-size: 60px;
+						padding-left: 40%;
+						color: $cinnabar;
+					}
+				}
+			}
+		}
+	}
 
-.add-tab {
-	h2 {
-		font-size: 32px;
-		font-color: $mehmeh;
-
+	.add-tab {
+		.panel {
+			position: relative;
+			background-color: $white;
+			font-color: $mehmeh;
+			.add-sex {
+				padding-left: 0;
+				float: left;
+			}
+			.add-priority {
+				padding-right: 0;
+				float: right;
+			}
+		}
+		h2 {
+			font-size: 32px;
+			font-color: $mehmeh;
+		}
 	}
 }
-
-.add-sex {
-	padding-left: 0;
-	float: left;
-}
-
-.add-priority {
-	padding-right: 0;
-	float: right;
-}
-
-.fi-torso, .fi-torso-female {
-	font-size: 60px;
-	padding-left: 40%;
-	color: $cinnabar;
-}
-.fi-crown {
-	position: absolute;
-	padding-left: 47%;
-	color: $cinnabar;
-}
-
 
 .button {
 	margin: 0;
 	padding: 5%;
 	width: 100%;
-}
-
-.filter-tab {
-	padding: 0;
-	margin: 0;
 }

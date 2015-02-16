@@ -41,13 +41,22 @@
 			<a href="#/user/{{user.id}}">
 				<div class="small-3 columns panel radius" data-equalizer-watch>
 
-					<div ng-show="user.priority == 1">
-						<i class="fi-crown"></i>	
-					</div>
-					<div ng-show="user.sex == 'Male'">
+					<div ng-show="user.priority == 1" class="ribbon-wrapper">
+						<div class="ribbon-front">
+							<img class="ribbon-text" src="/assets/ribbon-text.png"></img>
+						</div>
+						<div class="ribbon-edge-topleft"></div>
+						<div class="ribbon-edge-topright"></div>
+						<div class="ribbon-edge-bottomleft"></div>
+						<div class="ribbon-edge-bottomright"></div>
+						<div class="ribbon-back-left"></div>
+						<div class="ribbon-back-right"></div>
+					</div>			
+
+					<div ng-show="user.sex == 'Male'" class="user-pic">
 						<i class="fi-torso"></i>
 					</div>
-					<div ng-show="user.sex == 'Female'">
+					<div ng-show="user.sex == 'Female'" class="user-pic">
 						<i class="fi-torso-female"></i>
 					</div>
 					<hr>
