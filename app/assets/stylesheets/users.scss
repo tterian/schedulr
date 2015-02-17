@@ -13,9 +13,7 @@ $cinnabar		: #E25041;
 	.filter-tab {
 		padding: 0 20px 10px 20px;
 		.panel {
-			position: relative;
-			background-color: $white;
-			font-color: $mehmeh;
+			text-align: left;
 			width: 100%;
 		}
 	}
@@ -24,9 +22,6 @@ $cinnabar		: #E25041;
 		padding: 0;
 		.user-list { 
 			.panel {
-				position: relative;
-				background-color: $white;
-				font-color: $mehmeh;
 				margin: 0 20px 10px 20px;
 				.ribbon-wrapper {
 					position: absolute;
@@ -34,14 +29,11 @@ $cinnabar		: #E25041;
 					top: 2px;
 					left: -9%;
 				}
-				.user-title {
-					text-align: center;
-				}
 				.user-pic {
 					margin-top: 22px;
 					.fi-torso, .fi-torso-female {
 						font-size: 60px;
-						padding-left: 40%;
+						
 						color: $cinnabar;
 					}
 				}
@@ -52,9 +44,7 @@ $cinnabar		: #E25041;
 	.add-tab {
 		padding: 0 20px 10px 20px;
 		.panel {
-			position: relative;
-			background-color: $white;
-			font-color: $mehmeh;
+			text-align: left;
 			.add-sex {
 				padding-left: 0;
 				float: left;
@@ -71,8 +61,10 @@ $cinnabar		: #E25041;
 	}
 }
 
+
 .button {
 	margin: 0;
 	padding: 5%;
 	width: 100%;
 }
+

@@ -1,24 +1,22 @@
 <nav class="tab-bar">
-	<section class="left">
-		<a href="#/">
-			<%= image_tag("schedulr.png", class: "schedulr-icon") %>
-		</a>
-	</section>
+	<div class="main-bar">
+		<div class="large-2 columns schedulr-icon">
+			<a href="#/">
+				<%= image_tag("schedulr.png") %>
+			</a>
+		</div>
 
-	<section class="middle tab-bar-section">
-		<div class="small-6 columns small-push-3 search-bar">
+		<div class="large-6 columns search-bar">
 			<input ng-model="query" type="text" placeholder="Search a user..." class="radius">
 		</div>
-	</section>
-
-	<section class="right-small">
-		<div class="right-bar">
+		<div class="large-2 columns">
+			
 		</div>
-	</section>
+	</div>
 </nav>
 
 <div class="main-content">
-	<div class="small-2 columns filter-tab">
+	<div class="large-2 columns filter-tab">
 		<div class="panel radius">
 			<label>Sort users by:</label>
 			<select ng-model="usersProp">
@@ -30,7 +28,7 @@
 		</div>
 	</div>
 
-	<div class="small-6 columns main-tab">
+	<div class="large-6 columns main-tab">
 		<div ng-show="users.$resolved && users.length == 0">
 			<h4>There are no users here...</h4>
 			<p>Please add a user from the right panel!</p>
@@ -39,7 +37,7 @@
 		<div class="user-list" ng-repeat="user in users | filter:query
 														| orderBy:usersProp" data-equalizer>
 			<a href="#/user/{{user.id}}">
-				<div class="small-3 columns panel radius" data-equalizer-watch>
+				<div class="large-3 columns panel radius" data-equalizer-watch>
 					<div ng-show="user.priority == 1" class="ribbon-wrapper">
 						<%= image_tag("flat-ribbon.png") %>
 					</div>			
@@ -59,12 +57,12 @@
 		</div>
 	</div>
 
-	<div class="small-3 columns small-pull-1 add-tab">
+	<div class="large-3 columns add-tab">
 		<div class="panel radius">
 			<form ng-submit="save()">
 				<input type="text" placeholder="Enter a user name" class="radius" ng-model="user.name"/>
 				
-				<div class="small-6 columns add-sex">
+				<div class="large-6 columns add-sex">
 					<label for="user-sex-select">Select sex</label>
 					<select id="user-sex-select" ng-init="user.sex='Male'" ng-model="user.sex">
 						<option value="Male">Male</option>
@@ -72,7 +70,7 @@
 					</select>
 				</div>
 
-				<div class="small-6 columns add-priority">
+				<div class="large-6 columns add-priority">
 					<label for="user-sex-select">Select priority</label>
 					<select ng-init="user.priority=0" ng-model="user.priority">
 						<option value="1">High</option>
