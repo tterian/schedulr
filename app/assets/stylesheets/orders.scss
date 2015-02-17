@@ -11,21 +11,40 @@ $chateau-green	: #41A85F;
 
 .profile-tab {
 	position: relative;
-	padding: 0px;
+	padding: 0 20px 10px 20px;
 	.panel {
 		text-align: center;
 		background-color: $white;
 		font-color: $mehmeh;
-		width: 90%;
-		.profile-priority {
-			background-color: $fern;
-		}
+		width: 100%;
+		height: 280px;
+
+
 		.profile-title {
 			text-align: center;
 		}
 		.fi-torso, .fi-torso-female {
 			font-size: 60px;
 			color: $cinnabar;
+		}
+		.ribbon-wrapper {	
+			position: relative;
+			margin-top: 20px;
+			left: -20px;
+
+			.ribbon-front {
+				position: relative;
+				width: 125%;
+			}
+			.ribbon-edge-topleft {
+				position: absolute;
+
+  			}
+  			.ribbon-edge-topright {
+  				position: absolute;
+  				left: 117%;
+  			}
+
 		}
 	}
 }
@@ -34,7 +53,7 @@ $chateau-green	: #41A85F;
 		float: left;
 		padding-left: 0;
 		margin: 0 20px 20px 20px;
-		
+
 	.panel {
 		background-color: $white;
 		width: 95%;

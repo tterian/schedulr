@@ -12,7 +12,7 @@ $chateau-green	: #41A85F;
   .ribbon-front {
 	background-color: $fern;
 	height: 36px;
-	width: 214px;
+	width: 124%;
 	position: relative;
 	left:-10px;
 	z-index: 2;
@@ -67,7 +67,7 @@ $chateau-green	: #41A85F;
 
   .ribbon-edge-topright,
   .ribbon-edge-bottomright {
-	left: 194px;
+	left: 114%;
 	border-color: transparent transparent transparent $chateau-green;
 }
 

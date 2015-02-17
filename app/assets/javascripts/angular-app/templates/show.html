@@ -20,6 +20,7 @@
 <div class="main-content">
 	<div class="small-2 columns profile-tab">
 		<div class="panel radius">
+
 			<div ng-show="user.sex == 'Male'">
 				<i class="fi-torso"></i>
 			</div>
@@ -34,10 +35,18 @@
 				<span>{{orders.length}} placed orders</span>
 			</div>
 
-			<hr>
-			<div class="profile-priority">
-				<img ng-show="user.priority == 1" src="/assets/ribbon-text.png"></img>
-			</div>
+					<div ng-show="user.priority == 1" class="ribbon-wrapper">
+						<div class="ribbon-front">
+							<img class="ribbon-text" src="/assets/ribbon-text.png"></img>
+						</div>
+						<div class="ribbon-edge-topleft"></div>
+						<div class="ribbon-edge-topright"></div>
+						<div class="ribbon-edge-bottomleft"></div>
+						<div class="ribbon-edge-bottomright"></div>
+						<div class="ribbon-back-left"></div>
+						<div class="ribbon-back-right"></div>
+					</div>
+
 		</div>
 	</div>
 
