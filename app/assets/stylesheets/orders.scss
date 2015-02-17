@@ -25,23 +25,11 @@ $chateau-green	: #41A85F;
 			font-size: 60px;
 			color: $cinnabar;
 		}
-		.ribbon-wrapper {	
+		.ribbon-wrapper {
 			position: relative;
-			margin-top: 20px;
-			left: -20px;
-
-			.ribbon-front {
-				position: relative;
-				width: 125%;
-			}
-			.ribbon-edge-topleft {
-				position: absolute;
-
-  			}
-  			.ribbon-edge-topright {
-  				position: absolute;
-  				left: 117%;
-  			}
+			width: 138%;
+			top: 2px;
+			left: -19%;
 
 		}
 	}

@@ -28,6 +28,11 @@ $cinnabar		: #E25041;
 				background-color: $white;
 				font-color: $mehmeh;
 				margin: 0 20px 10px 20px;
+				.ribbon-wrapper {
+					width: 119%;
+					top: 2px;
+					left: -9%;
+				}
 				.user-title {
 					text-align: center;
 				}
