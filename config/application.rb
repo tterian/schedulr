@@ -19,8 +19,8 @@ module Schedulr
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
-    config.serve_static_files = true
-    
+    config.serve_static_assets = true
+
     config.assets.paths << Rails.root.join("lib","assets","bower_components")
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
