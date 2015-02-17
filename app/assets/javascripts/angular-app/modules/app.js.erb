@@ -9,11 +9,11 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
         $routeProvider
             .when('/',          {
             	controller: 'UserIndexController',    
-            	templateUrl: 'assets/angular-app/templates/index.html' 
+            	templateUrl: "<%= asset_path('angular-app/templates/index.html') %>" 
             })
             .when('/user/:id', {
             	controller: 'UserShowController',     
-            	templateUrl: 'assets/angular-app/templates/show.html' 
+            	templateUrl: "<%= asset_path('angular-app/templates/show.html') %>" 
             })
             .otherwise({redirectTo: '/'});
 }]);
