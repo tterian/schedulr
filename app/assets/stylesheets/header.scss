@@ -2,6 +2,8 @@ $silver-light	: #bdc3c7;
 
 .tab-bar {
 	border-bottom: solid 1px $silver-light;
+	height: 60px;
+	background-color: white;
 	.main-bar {
 		position: relative;
 		display: inline-block;
